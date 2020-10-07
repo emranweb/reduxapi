@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import PostList from "./PostList.js";
+import Singleuser from "./SingleUser.js";
+
 
 function App() {
   return (

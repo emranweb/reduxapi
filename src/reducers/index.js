@@ -9,6 +9,19 @@ const postReducer=(state=[], action)=>{
 }
 
 
+const userReducer=(state=[], action)=>{
+   if(action.type==="fetch_user"){
+     return [state, action.payload]
+   }
+
+   return state;
+
+}
+
+
+
+
 export default combineReducers({
-    posts:postReducer
+    posts:postReducer,
+    users:userReducer
 })

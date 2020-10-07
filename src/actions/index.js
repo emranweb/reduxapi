@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 const fetchData = () => {
   return async function (dispatch) {
     const response = await axios.get(
@@ -8,5 +9,6 @@ const fetchData = () => {
     dispatch({ type: "fetct-data", payload: response.data });
   };
 };
+
 
 export default fetchData;

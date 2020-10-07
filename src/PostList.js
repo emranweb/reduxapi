@@ -1,6 +1,8 @@
 import React from 'react';
 import fetchData from "./actions/index";
 import {connect } from "react-redux";
+import SingleUser from "./SingleUser.js";
+
 
 
 class PostList extends React.Component {
@@ -14,8 +16,11 @@ class PostList extends React.Component {
             return (
                 <div key={post.id}>
                     <h3>{post.title}</h3>
+                    <SingleUser id={post.userId}/>
                 </div>
+                
             )
+            
         })
     }
 }
